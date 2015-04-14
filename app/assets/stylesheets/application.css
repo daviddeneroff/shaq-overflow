@@ -75,6 +75,8 @@ a {
 
 .the-best {
   background-color: gold;
+  width: 50%;
+  margin: auto
 }
 
 /*#login-form {
