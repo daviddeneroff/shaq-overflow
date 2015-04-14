@@ -162,7 +162,7 @@ form textarea {
   padding: .8em .55em;
   text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
   transition: all 400ms ease;
-  width: 90%;
+  width: 100%;
 }
 
 form input[type="text"]:focus,
@@ -295,4 +295,9 @@ form input[type="submit"]:hover {
 
 .errors {
   color: red;
+}
+
+#comment_content {
+  margin: auto;
+  width: 50%;
 }
