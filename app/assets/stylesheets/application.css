@@ -1,0 +1,298 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+ #shaq-tiles {
+  background-image: url(http://static.giantbomb.com/uploads/original/1/13641/2182953-shaq.jpg);
+  background-size: 100px;
+}
+
+#welcome-title {
+  font-family: 'Lobster', cursive;
+  font-size: 60px;
+  color: red;
+  margin-bottom: 10px;
+}
+
+.welcome-user {
+  text-align: center;
+}
+
+#welcome-login-btn {
+  background-color: red;
+}
+
+#title {
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
+  color: black;
+}
+
+#nav-bar img {
+  height: 80px;
+  vertical-align: bottom;
+  padding-left: 10px;
+}
+
+#nav-bar {
+  border-bottom: 2px solid #d3d3d3;
+  background-color: white;
+  color: #d3d3d3;
+  line-height: 80px;
+  font-size: 20px;
+  color: grey;
+  display: block;
+  position: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  width: 100%;
+  z-index: 5;
+}
+
+#nav-bar a:hover {
+  background-color: white;
+}
+
+#main {
+  padding-top: 85px;
+}
+
+a {
+  color: red;
+}
+
+.the-best {
+  background-color: gold;
+}
+
+/*#login-form {
+  display: none;
+  }*/
+
+div.overlay {
+  background-color: rgba(0,0,0,.50);
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+
+div.overlay > div.content-wrapper {
+  align-self: center;
+  background-color: rgba(0,0,0,.25);
+  border-radius: 2px;
+  padding: 6px;
+  width: 450px;
+}
+
+div.overlay > div.content-wrapper > div.login-content {
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+  padding: 24px;
+  position: relative;
+}
+
+div.overlay > div.content-wrapper > div.form-content {
+  background-color: rgb(255,255,255);
+  border-radius: 2px;
+  padding: 24px;
+  position: relative;
+}
+
+.overlay a.close {
+  background-color: rgb(204,204,204);
+  border-radius: 50%;
+  color: rgb(255,255,255);
+  display: block;
+  font-family: 'Varela Round', sans-serif;
+  font-size: .8em;
+  padding: .2em .5em;
+  position: absolute;
+  top: 1.25rem;
+  transition: all 400ms ease;
+  right: 1.25rem;
+}
+
+.overlay a.close:hover {
+  background-color: #1bc5b3;
+  cursor: pointer;
+}
+
+form label {
+  color: rgb(0,0,0);
+  display: block;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 1.25em;
+  margin: .75em 0;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="search"],
+form input[type="password"],
+form textarea {
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb( 186, 186, 186 );
+  border-radius: 1px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.08);
+  display: block;
+  font-size: .65em;
+  margin: 6px 0 12px 0;
+  padding: .8em .55em;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 1);
+  transition: all 400ms ease;
+  width: 90%;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="number"]:focus,
+form input[type="search"]:focus,
+form input[type="password"]:focus,
+form textarea:focus,
+form select:focus {
+  border-color: #4195fc;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px #4195fc;
+}
+
+form input[type="text"]:invalid:focus,
+form input[type="email"]:invalid:focus,
+form input[type="number"]:invalid:focus,
+form input[type="search"]:invalid:focus,
+form input[type="password"]:invalid:focus,
+form textarea:invalid:focus,
+form select:invalid:focus {
+  border-color: rgb(248,66,66);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1), 0 0 8px rgb(248,66,66);
+
+}
+
+form input[type="submit"] {
+  background-color: #50c1e9;
+  border: 1px solid rgba(0,0,0,.1);
+  color: rgb(255,255,255);
+  font-family: 'Varela Round', sans-serif;
+  font-size: .85em;
+  padding: .55em .9em;
+  transition: all 400ms ease;
+}
+
+form input[type="submit"]:hover {
+  background-color: #1bc5b3;
+  cursor: pointer;
+}
+
+.login-content .close img {
+  width: 40px;
+  right: 0px;
+}
+
+.login-content #laying-down {
+  width: 400px;
+}
+
+.form-content .close img {
+  width: 40px;
+  right: 0px;
+}
+
+.form-content #laying-down {
+  width: 400px;
+}
+
+.oops {
+  text-align: center;
+}
+
+.nice-font {
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+.sub-title {
+  background-color: #d3d3d3;
+  font-family: 'Josefin Sans', sans-serif;
+  color: white;
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.user-page-questions {
+  text-align: center;
+}
+
+.centered {
+  text-align: center;
+}
+
+.shaq-face {
+  border-radius: 50%;
+  border: 2px solid #50c1e9;
+  width: 350px;
+  height: 350px;
+}
+
+.cmon-ride {
+  position:relative;
+  text-align:center;
+}
+
+.photo-submission {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid #50c1e9
+}
+
+.big-arrow {
+  width: 200px;
+  padding-bottom: 100px;
+}
+
+.thumbs {
+  height: 25px;
+  width: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.thumbs:hover {
+  transform: scale(1.1);
+}
+
+#answer_content {
+  font-size: 20px;
+}
+
+.middle-votes {
+  padding-top: 11px;
+}
+
+.errors {
+  color: red;
+}

@@ -1,0 +1,16 @@
+<div class="oops">
+<h1 class="nice-font">Here are all the questions</h1>
+<h3 class="sub-title">Click a question to view more</h3>
+
+<%= link_to("order by vote count", '/questions?order=votes') %> |
+
+<%= link_to("order by most recent", '/questions') %> |
+
+<%= link_to("order by trending", '/questions?order=trending') %><br>
+
+<% @questions.each do |question| %>
+  Votes: | <%= question.votes.count %>
+  Answers: | <%= question.answers.count %>
+    <p><%= link_to("#{question.title}", question_path(question)) %></p>
+<% end %>
+</div>

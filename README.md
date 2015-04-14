@@ -1,0 +1,1 @@
+!(schema)[assets/schema.png]

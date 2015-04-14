@@ -1,0 +1,1 @@
+<%= link_to("Up Vote", '/', class: "up-vote-comment", data: { direction: "up", url: "/questions/#{@question.id}/answers/#{answer.id}/comment/#{comment.id}/votes", answer_id: answer.id, question_id: @question.id, votable_type: "Comment", comment_id: comment.id }) %>

@@ -1,0 +1,8 @@
+<div id="edit-answer-form">
+  <h1>Add Answer</h1>
+  <%= form_for [@question, @answer] do |f| %>
+  Content: <%= f.text_field :content %><br />
+  <%= f.check_box :accepted %>
+  <%= f.submit "Update" %>
+<% end %>
+</div>

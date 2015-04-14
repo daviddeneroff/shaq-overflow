@@ -1,0 +1,17 @@
+<div class="overlay">
+  <div class="content-wrapper">
+    <div class="form-content">
+      <a class="close"><img class="close" src="/assets/small_shaq.png"></a>
+      <%= form_for @user do |f| %>
+      <%= f.label(:username, 'Username') %>
+      <%= f.text_field(:username) %>
+      <%= f.label(:email, 'Email') %>
+      <%= f.text_field(:email) %>
+      <%= f.label(:password, 'Password') %>
+      <%= f.password_field(:password) %>
+      <%= f.submit %>
+      <% end %>
+      <img id="laying-down" src="/assets/shaq_laying_down.jpg" alt="shaq">
+    </div>
+  </div>
+</div>

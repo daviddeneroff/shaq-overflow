@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
+
+development:
+  <<: *default
+  database: shaq_overflow_development
+
+test:
+  <<: *default
+  database: shaq_overflow_test
+
+production:
+  <<: *default
+  database: shaq_overflow_production
+  username: shaq_overflow
+  password: <%= ENV['SHAQ_OVERFLOW_DATABASE_PASSWORD'] %>
