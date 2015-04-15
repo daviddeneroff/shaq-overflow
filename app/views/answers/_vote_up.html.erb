@@ -1,1 +1,1 @@
-<%= link_to("Up Vote", '/', class: "up-vote-answer", data: { direction: "up", url: "/questions/#{@question.id}/answers/#{answer.id}/votes", answer_id: answer.id, question_id: @question.id, votable_type: "Answer" }) %>
+<%= link_to image_tag('thumbs-up.jpg', class: "up-vote-answer thumbs", data: { direction: "up", url: "/questions/#{@question.id}/answers/#{answer.id}/votes", answer_id: answer.id, question_id: @question.id, votable_type: "Answer" }), "/" %>
