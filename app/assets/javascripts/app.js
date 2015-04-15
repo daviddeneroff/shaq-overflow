@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
- $("a.up-vote-answer").click(function(event) {
+ $(".up-vote-answer").click(function(event) {
       event.preventDefault();
       var $target = $(event.target);
       $.ajax({
@@ -23,7 +23,6 @@ $(document).ready(function() {
         url: $target.data("url"),
         data: $target.data(),
         success: function(response) {
-          console.log(response);
           $('#question-' + $target.data('question-id')).empty();
           $('#question-' + $target.data('question-id')).append(response)
         }
@@ -31,7 +30,7 @@ $(document).ready(function() {
     }
   );
 
- $("a.up-vote-comment").click(function(event) {
+ $(".up-vote-comment").click(function(event) {
       event.preventDefault();
       var $target = $(event.target);
       console.log($target.data("url"))
@@ -40,7 +39,6 @@ $(document).ready(function() {
         url: $target.data("url"),
         data: $target.data(),
         success: function(response) {
-          console.log(response);
           $('#comment-' + $target.data('comment-id')).empty();
           $('#comment-' + $target.data('comment-id')).append(response)
         }

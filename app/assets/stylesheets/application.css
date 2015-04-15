@@ -24,7 +24,7 @@
   font-family: 'Lobster', cursive;
   font-size: 60px;
   color: red;
-  margin-bottom: 10px;
+  margin-bottom: 18px;
   margin-top: 15px;
 }
 
@@ -77,12 +77,10 @@ a {
 .the-best {
   background-color: gold;
   width: 50%;
-  margin: auto
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 48px;
 }
-
-/*#login-form {
-  display: none;
-  }*/
 
 div.overlay {
   background-color: rgba(0,0,0,.50);
@@ -293,7 +291,7 @@ form input[type="submit"]:hover {
 }
 
 .middle-votes {
-  padding-top: 11px;
+  padding-top: 20px;
 }
 
 .errors {
@@ -318,5 +316,19 @@ form input[type="submit"]:hover {
 .will-fit {
   color: red;
   font-family: 'Lobster';
-  /*font-family:'Helvetica Neue', Helvetica,sans-serif;*/
 }
+
+/*.answer-votes-container {
+  height: 50px;
+  width: 250px;
+  margin: auto;
+}
+
+.vote-with-thumbs {
+  float: left;
+}
+
+.answer-content {
+  float: right;
+  margin-top: 23px;
+}*/
