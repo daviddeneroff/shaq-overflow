@@ -82,10 +82,6 @@ a {
   border-radius: 48px;
 }
 
-/*#login-form {
-  display: none;
-  }*/
-
 div.overlay {
   background-color: rgba(0,0,0,.50);
   bottom: 0;
@@ -320,5 +316,4 @@ form input[type="submit"]:hover {
 .will-fit {
   color: red;
   font-family: 'Lobster';
-  /*font-family:'Helvetica Neue', Helvetica,sans-serif;*/
 }
