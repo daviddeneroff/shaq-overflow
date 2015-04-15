@@ -2532,3 +2532,2912 @@ Processing by QuestionsController#new as */*
   Rendered questions/_new_question.html.erb (1.2ms)
   Rendered questions/new.html.erb (6.3ms)
 Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:20:26 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  Rendered questions/_vote_up.html.erb (0.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (0.5ms)
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.1ms)
+  Rendered answers/_vote_down.html.erb (0.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  Rendered answers/_form.html.erb (1.4ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 12], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 12], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 11], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 11], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 10], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 10], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (30.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+Completed 200 OK in 143ms (Views: 138.2ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/application-33ad1c99943eeff7e700c158069fba7f.css?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/thumbs-down-0f76af6ef360ce8ab7538ce6a75f7845.png" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/assets/thumbs-up-669ebc77b8ecb483ce8c4b1ded0b5c6c.jpg" for ::1 at 2015-04-14 20:20:26 -0400
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:20:28 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (1.0ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (17.1ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 4]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 4]]
+Completed 200 OK in 80ms (Views: 76.1ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:20:28 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-14 20:20:30 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 79ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-14 20:20:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 47.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:20:30 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:21:00 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-d5b088ae561eec22d052f33408ed93aa.css?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:21:00 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:21:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 102ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/application-06e7060963d0ffea79813b538cbadfa9.css?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:21:09 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:21:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 93ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/application-06e7060963d0ffea79813b538cbadfa9.css?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:21:54 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:23:29 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 103ms (Views: 102.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-fd465f2d3ba5ed906bf4049e54775bea.css?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:23:29 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:23:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-876b5dd119728ed4345c9c2c83f542c7.css?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:23:37 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:23:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/application-9f0fad956677818fee3a3a09b6b518cd.css?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:23:42 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:23:49 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 108ms (Views: 107.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ff18c935cfcbb76e916e16d72145945f.css?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:23:49 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:01 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/application-6257c7f2c6945eefcee263d9458b8a6f.css?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:01 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:07 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ff6e56d8ef1507d38004f5f914c02131.css?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:07 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 91ms (Views: 90.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/application-ff6e56d8ef1507d38004f5f914c02131.css?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:08 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 91ms (Views: 90.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/application-ff6e56d8ef1507d38004f5f914c02131.css?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:09 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 102ms (Views: 101.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/application-f4f82e01287a1dc72336acf6cb53a078.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:19 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 94ms (Views: 92.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/application-f4f82e01287a1dc72336acf6cb53a078.css?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:19 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:20 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:20 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:20 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:20 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:20 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:26 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-dd41bb3ddeb08fb78e00ecf93e1783b5.css?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:39 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/application-ff18c935cfcbb76e916e16d72145945f.css?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:39 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 108ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-cdcf18851586abef086bd4695a78e2b2.css?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:51 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:52 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/application-cdcf18851586abef086bd4695a78e2b2.css?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:52 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:53 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 91ms (Views: 90.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/application-cdcf18851586abef086bd4695a78e2b2.css?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:53 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:24:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 88ms (Views: 87.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/application-cdcf18851586abef086bd4695a78e2b2.css?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:24:54 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:25:12 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-99c54bd2790d1ea8e9274883e7dafc47.css?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:25:13 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:25:20 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 99.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-8f51e447f62e2c19adfa5056cece5f18.css?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:25:20 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:25:21 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 96.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/application-8f51e447f62e2c19adfa5056cece5f18.css?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:25:21 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:25:31 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:25:31 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:25:31 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:25:31 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:25:31 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:25:31 -0400
+
+
+Started GET "/assets/application-ff18c935cfcbb76e916e16d72145945f.css?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:25:32 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:25:57 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-7fc056b601afede93d84d8c0481e2bca.css?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:25:57 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:25:58 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:25:58 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:26:00 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:26:00 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:27:08 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 70ms (Views: 69.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/application-7fc056b601afede93d84d8c0481e2bca.css?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:27:08 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:02 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 99ms (Views: 98.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-b304aed46230c33bffc870e67fd51e22.css?body=1" for ::1 at 2015-04-14 20:30:02 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:02 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:02 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:03 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 124ms (Views: 122.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0d50303b750a1435eec0fce1e1eee68b.css?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:15 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:30 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-55df653999d6511aa4ba5e9ec195d525.css?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:30 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 96ms (Views: 95.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/application-2750a14d396670309afc8611c279156b.css?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:37 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:38 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/application-2750a14d396670309afc8611c279156b.css?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:38 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:47 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/application-cdcf18851586abef086bd4695a78e2b2.css?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:47 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:30:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 103ms (Views: 102.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/application-8f51e447f62e2c19adfa5056cece5f18.css?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:30:55 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:31:32 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-35acb9c24930fed8f99b6ddfad3cf073.css?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:31:32 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:31:46 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:31:46 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:32:11 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 117ms (Views: 116.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-478ac5845da146a0a4ea6dd959c89b72.css?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:32:11 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:32:40 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 122ms (Views: 120.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3401a7c29d5bf563a57d298aa93b74c2.css?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:32:41 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:33:03 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-0071eeef87ec16dd6c36e90c5b979d19.css?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:33:03 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:33:26 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:33:26 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:33:48 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 111ms (Views: 110.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ec9898ebc0b996153fc14d6baa1b8192.css?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:33:48 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:34:06 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:34:06 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:34:15 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 101ms (Views: 100.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/application-bb6582b3b4b84fc7d8b039a99f39ad54.css?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:34:16 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:34:24 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-bebef8f65d9673725b3afeea039760c9.css?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:34:24 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:34:58 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 97ms (Views: 96.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-ceb26e8eb493cb6fce1341c1d297e00b.css?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:34:58 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:35:15 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:35:15 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:35:41 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 105ms (Views: 104.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-740d00566fcd56cffeb558f87c44106d.css?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:35:41 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:35:42 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 45ms (Views: 44.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/application-740d00566fcd56cffeb558f87c44106d.css?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:35:42 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:36:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 93ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/application-740d00566fcd56cffeb558f87c44106d.css?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:36:17 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:36:28 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 112ms (Views: 111.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/application-ceb26e8eb493cb6fce1341c1d297e00b.css?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:36:28 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:36:59 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-deaf847c6c80b5ac86f7cf7de8ffa510.css?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:36:59 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:37:37 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-316fef136209f7051cd0464d2e5084c7.css?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:37:37 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:38:51 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 101ms (Views: 100.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-6e5d0c823c49b641980abea5b3aee5a0.css?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:38:51 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:13 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-17f0df43a3b51c126facce1fffa60a9b.css?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:13 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:17 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 95ms (Views: 94.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/application-17f0df43a3b51c126facce1fffa60a9b.css?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:18 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:27 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 97ms (Views: 96.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-8795e7759343a11d5e7ebba22e5540b8.css?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:27 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:44 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 98ms (Views: 97.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/application-409a3121da2a2cf3fcc5fe9faac0beb2.css?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:45 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:54 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 96ms (Views: 95.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application-3a2120ebd5a07659731db25da59976a2.css?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:54 -0400
+
+
+Started GET "/" for ::1 at 2015-04-14 20:39:55 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 90ms (Views: 89.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/application-3a2120ebd5a07659731db25da59976a2.css?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:39:55 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-14 20:40:00 -0400
+Processing by SessionsController#new as */*
+  Rendered sessions/new.html.erb (5.1ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-14 20:40:00 -0400
+
+
+Started GET "/assets/shaq_laying_down.jpg" for ::1 at 2015-04-14 20:40:00 -0400
+
+
+Started GET "/login" for ::1 at 2015-04-14 20:40:19 -0400
+Processing by SessionsController#new as */*
+  Rendered sessions/new.html.erb (2.2ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-04-14 20:40:21 -0400
+Processing by UsersController#new as */*
+  Rendered users/_form.html.erb (2.0ms)
+  Rendered users/new.html.erb (7.9ms)
+Completed 200 OK in 23ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:40:23 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 145ms (Views: 142.2ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:40:24 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:40:25 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.2ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (18.2ms)
+Completed 500 Internal Server Error in 22ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    34: <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+    35: 
+    36: <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    37: <% if current_user.id == @question.user_id %>
+    38:   <%= render partial: "answers/edit", locals: {answer: answer} %>
+    39: <% end %>
+    40:       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
+  app/views/questions/show.html.erb:37:in `block in _app_views_questions_show_html_erb__2501758430997918142_70204846599400'
+  app/views/questions/show.html.erb:30:in `_app_views_questions_show_html_erb__2501758430997918142_70204846599400'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.1ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (1.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (27.8ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:40:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 51ms (Views: 48.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:40:55 -0400
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:40:56 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 101ms (Views: 98.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:40:56 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:40:57 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.2ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 18ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    34: <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+    35: 
+    36: <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    37: <% if current_user.id == @question.user_id %>
+    38:   <%= render partial: "answers/edit", locals: {answer: answer} %>
+    39: <% end %>
+    40:       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
+  app/views/questions/show.html.erb:37:in `block in _app_views_questions_show_html_erb__2501758430997918142_70204846599400'
+  app/views/questions/show.html.erb:30:in `_app_views_questions_show_html_erb__2501758430997918142_70204846599400'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (70.9ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:41:28 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.6ms)
+  Rendered answers/_vote_down.html.erb (0.2ms)
+  Rendered answers/_form.html.erb (2.0ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 12], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 12], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 11], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 11], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 10], ["votable_type", "Comment"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 10], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (28.4ms)
+Completed 200 OK in 74ms (Views: 69.9ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-14 20:41:28 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:41:54 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.2ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (12.4ms)
+Completed 500 Internal Server Error in 16ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    34: <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+    35: 
+    36: <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    37: <% if current_user.id == @question.user_id %>
+    38:   <%= render partial: "answers/edit", locals: {answer: answer} %>
+    39: <% end %>
+    40:       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
+  app/views/questions/show.html.erb:37:in `block in _app_views_questions_show_html_erb__2501758430997918142_70204854707660'
+  app/views/questions/show.html.erb:30:in `_app_views_questions_show_html_erb__2501758430997918142_70204854707660'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (5.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.1ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:42:37 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (2.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.3ms)
+  Rendered answers/_vote_down.html.erb (0.2ms)
+  Rendered questions/show.html.erb within layouts/application (16.9ms)
+Completed 500 Internal Server Error in 21ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    34: <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+    35: 
+    36: <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    37: <% if current_user.id && current_user.id == @question.user_id %>
+    38:   <%= render partial: "answers/edit", locals: {answer: answer} %>
+    39: <% end %>
+    40:       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
+  app/views/questions/show.html.erb:37:in `block in _app_views_questions_show_html_erb__2501758430997918142_70204827263060'
+  app/views/questions/show.html.erb:30:in `_app_views_questions_show_html_erb__2501758430997918142_70204827263060'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (6.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (22.5ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:42:38 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.2ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 14ms
+
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    34: <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+    35: 
+    36: <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    37: <% if current_user.id && current_user.id == @question.user_id %>
+    38:   <%= render partial: "answers/edit", locals: {answer: answer} %>
+    39: <% end %>
+    40:       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
+  app/views/questions/show.html.erb:37:in `block in _app_views_questions_show_html_erb__2501758430997918142_70204827263060'
+  app/views/questions/show.html.erb:30:in `_app_views_questions_show_html_erb__2501758430997918142_70204827263060'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_source.erb (54.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/_web_console.html.erb (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.0.0/lib/action_dispatch/templates/rescues/template_error.html.erb within rescues/layout (73.6ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:42:50 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.2ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered answers/_form.html.erb (1.8ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 12], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 12], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 11], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 11], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 10], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 10], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 125ms (Views: 121.1ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-14 20:42:50 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-14 20:42:51 -0400
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:42:56 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 78ms (Views: 75.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:42:56 -0400
+
+
+Started GET "/questions" for ::1 at 2015-04-14 20:42:59 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[36m (1.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:42:59 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-14 20:42:59 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_up.html.erb (0.1ms)
+  Rendered answers/_vote_down.html.erb (0.1ms)
+  Rendered answers/_form.html.erb (1.2ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 12], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 12], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 11], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 11], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.2ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 10], ["votable_type", "Comment"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 10], ["votable_type", "Comment"], ["value", -1]]
+  Rendered comments/_vote_up.html.erb (0.1ms)
+  Rendered comments/_vote_down.html.erb (0.1ms)
+  Rendered questions/show.html.erb within layouts/application (26.7ms)
+Completed 200 OK in 136ms (Views: 132.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/base-9ace492b1eba3665542a7fa8e1f4a9fa.css?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/application-b02a25cdbad81dc5e2c6c2999962d648.css?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/font-e62667dfc9f96164adc106093f77951d.css?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/answer-ff84f1ae2132f6ae0178b1e766bf7f24.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/app-276fcb59e629114cc5b6392773a956e2.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/comment-4a3260b3bc3c301cd1b059ca5e2ec1f2.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/login-e48bffc4427e5aee6b0443ee5cfa4253.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/question-9cc39715095d4e05fa3647ea00d586a5.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/application-a7606ca2d39bd8cba842dfad33263387.js?body=1" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-14 20:43:00 -0400
+
+
+Started GET "/questions/3/answers/new" for ::1 at 2015-04-14 20:44:43 -0400
+Processing by AnswersController#new as */*
+  Parameters: {"question_id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  Rendered answers/_new_answer.html.erb (1.3ms)
+  Rendered answers/new.html.erb (6.2ms)
+Completed 200 OK in 13ms (Views: 12.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-14 20:44:43 -0400
