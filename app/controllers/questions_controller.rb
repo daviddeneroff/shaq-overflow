@@ -30,7 +30,7 @@ class QuestionsController < ApplicationController
     if @question.save
       redirect_to '/questions'
     else
-      flash[:notice] = "Invalid schtuff"
+      flash[:notice] = "Invalid url/title"
       render :action => :new
     end
   end
