@@ -15,7 +15,7 @@
 <p class="centered middle-votes">Votes: <span class="make-question-up-votes" id="question-<%= @question.id%>"><%= @question.q_net %></span></p>
   <%= render partial: "vote_down" %>
 <% else %>
-  <%= @question.q_net %>
+  Votes: <%= @question.q_net %>
 <% end %>
 
 <p class="add-answer"><a href="/questions/<%= @question.id %>/answers/new">Got an answer??</a></p>
