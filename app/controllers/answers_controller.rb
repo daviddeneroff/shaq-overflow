@@ -33,8 +33,7 @@ class AnswersController < ApplicationController
   def update
     @answer = Answer.find params[:answer][:answer_id]
     @answer.update_attributes(accepted: true)
-    # redirect_to question_path(@answer.question)
-    redirect_to '/'
+    redirect_to "/questions/#{@answer.question_id}"
   end
 
   def destroy
