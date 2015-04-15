@@ -28,13 +28,17 @@
   <p><%= @question.best.content %></p>
 </div>
 <% end %>
+
 <% @question.answers.each do |answer| %>
   <p><%= answer.content %></p>
   <p>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
 
-<%= render partial: "answers/vote_up", locals: {answer: answer} %>
+<% if current_user %>
+  <%= render partial: "answers/vote_up", locals: {answer: answer} %>
 
-<%= render partial: "answers/vote_down", locals: {answer: answer} %>
+  <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+<% end %>
+
 <% if current_user && current_user.id == @question.user_id %>
   <%= render partial: "answers/edit", locals: {answer: answer} %>
 <% end %>
