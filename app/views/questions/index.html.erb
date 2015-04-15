@@ -9,8 +9,8 @@
 <%= link_to("order by trending", '/questions?order=trending') %><br>
 
 <% @questions.each do |question| %>
-  Votes: | <%= question.votes.count %>
-  Answers: | <%= question.answers.count %>
+  Votes: <%= question.votes.count %> |
+  Answers: <%= question.answers.count %>
     <p><%= link_to("#{question.title}", question_path(question)) %></p>
 <% end %>
 </div>
