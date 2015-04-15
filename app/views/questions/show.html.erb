@@ -2,7 +2,6 @@
 
 <h3 class="question-title centered"><%= @question.title %></h3>
 
-
 <div class="cmon-ride">
   <img class="shaq-face" src="/assets/shaq_funny_face.jpg">
   <img class="big-arrow" src="/assets/arrow.png">
@@ -12,36 +11,44 @@
 <div class="centered">
 <% if current_user %>
   <%= render partial: "vote_up" %>
-<p class="centered middle-votes">Votes: <span class="make-question-up-votes" id="question-<%= @question.id%>"><%= @question.q_net %></span></p>
+  <p class="centered middle-votes">Votes: <span class="make-question-up-votes" id="question-<%= @question.id%>"><%= @question.q_net %></span></p>
   <%= render partial: "vote_down" %>
-<p class="add-answer"><a href="/questions/<%= @question.id %>/answers/new">Got an answer??</a></p>
+  <p class="add-answer"><a href="/questions/<%= @question.id %>/answers/new">Got an answer??</a></p>
 <% else %>
   Votes: <%= @question.q_net %>
 <% end %>
+
 <% if @question.answers.count > 0 %>
   <p>Answers:</p>
 <% end %>
 
 <% if @question.best %>
-<div class="the-best">
-  <h3>Best Answer</h3>
-  <p><%= @question.best.content %></p>
+  <div class="the-best">
+    <h3>Best Answer</h3>
+    <p><%= @question.best.content %></p>
+  </div>
+<% end %>
+
+<div class="answer-votes-container">
+  <div class="answer-content"><% @question.answers.each do |answer| %>
+    <p><%= answer.content %></p>
+  </div>
+
+  <div class="vote-with-thumbs">
+    <% if current_user %>
+      <%= render partial: "answers/vote_up", locals: {answer: answer} %>
+      Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span>
+      <%= render partial: "answers/vote_down", locals: {answer: answer} %>
+    <% else %>
+        <p>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
+    <% end %>
+  </div>
 </div>
-<% end %>
-
-<% @question.answers.each do |answer| %>
-  <p><%= answer.content %></p>
-  <p>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
-
-<% if current_user %>
-  <%= render partial: "answers/vote_up", locals: {answer: answer} %>
-
-  <%= render partial: "answers/vote_down", locals: {answer: answer} %>
-<% end %>
 
 <% if current_user && current_user.id == @question.user_id %>
   <%= render partial: "answers/edit", locals: {answer: answer} %>
 <% end %>
+<br>
   <p>Tell us what you think about this answer</p>
   <%= render partial: "answers/form", locals: {answer: answer}%>
   <% answer.comments.each do |comment| %>
