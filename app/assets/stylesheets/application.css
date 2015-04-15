@@ -291,7 +291,7 @@ form input[type="submit"]:hover {
 }
 
 .middle-votes {
-  padding-top: 11px;
+  padding-top: 20px;
 }
 
 .errors {
@@ -318,7 +318,7 @@ form input[type="submit"]:hover {
   font-family: 'Lobster';
 }
 
-.answer-votes-container {
+/*.answer-votes-container {
   height: 50px;
   width: 250px;
   margin: auto;
@@ -331,4 +331,4 @@ form input[type="submit"]:hover {
 .answer-content {
   float: right;
   margin-top: 23px;
-}
+}*/
