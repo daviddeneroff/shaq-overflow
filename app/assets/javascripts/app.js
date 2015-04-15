@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
- $("a.up-vote-answer").click(function(event) {
+ $(".up-vote-answer").click(function(event) {
       event.preventDefault();
       var $target = $(event.target);
       $.ajax({
@@ -30,7 +30,7 @@ $(document).ready(function() {
     }
   );
 
- $("a.up-vote-comment").click(function(event) {
+ $(".up-vote-comment").click(function(event) {
       event.preventDefault();
       var $target = $(event.target);
       console.log($target.data("url"))
