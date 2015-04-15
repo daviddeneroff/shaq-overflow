@@ -25,6 +25,7 @@
   font-size: 60px;
   color: red;
   margin-bottom: 10px;
+  margin-top: 15px;
 }
 
 .welcome-user {
@@ -302,4 +303,20 @@ form input[type="submit"]:hover {
 #comment_content {
   margin: auto;
   width: 50%;
+}
+
+.main-page-box {
+  height: 200px;
+  width: 400px;
+  background-color: white;
+  opacity: .9;
+  margin: auto;
+  margin-bottom: 50px;
+  border: 4px solid red;
+}
+
+.will-fit {
+  color: red;
+  font-family: 'Lobster';
+  /*font-family:'Helvetica Neue', Helvetica,sans-serif;*/
 }

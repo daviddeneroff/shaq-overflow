@@ -34,7 +34,7 @@
 <%= render partial: "answers/vote_up", locals: {answer: answer} %>
 
 <%= render partial: "answers/vote_down", locals: {answer: answer} %>
-<% if current_user.id == @question.user_id %>
+<% if current_user && current_user.id == @question.user_id %>
   <%= render partial: "answers/edit", locals: {answer: answer} %>
 <% end %>
       Answer Comment form <%= render partial: "answers/form", locals: {answer: answer}%>
