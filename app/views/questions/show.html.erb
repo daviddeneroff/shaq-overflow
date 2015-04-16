@@ -38,7 +38,8 @@
       <p class='centered middle-votes'>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
       <%= render partial: "answers/vote_down", locals: {answer: answer} %>
     <% else %>
-        <p>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
+        <p class="centered">Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span>
+        </p>
     <% end %>
 <br>
 <% if current_user && current_user.id == @question.user_id %>
