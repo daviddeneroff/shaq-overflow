@@ -40,7 +40,7 @@
     <% else %>
         <p>Votes: <span class="make-answer-up-votes" id="answer-<%= answer.id%>"><%= answer.net %></span></p>
     <% end %>
-
+<br>
 <% if current_user && current_user.id == @question.user_id %>
   <%= render partial: "answers/edit", locals: {answer: answer} %>
 <% end %>
@@ -50,10 +50,9 @@
   <% answer.comments.each do |comment| %>
 
     <div class="comment-list">
-    <p><%= comment.content %></p>
+      <p class="centered"><%= comment.content %></p>
     </div>
-    <%= render partial: "comments/vote_up", locals: {answer: answer, comment: comment} %>
-    <%= render partial: "comments/vote_down", locals: {answer: answer, comment: comment} %>
+
 
   <% end %>
 
