@@ -2,7 +2,7 @@ $(document).ready(function() {
   $(".new_comment").submit(function(event){
     event.preventDefault();
   var type = $('#comment_commentable_type').val()
-  var type_id = $('#comment_commentable_id').val()
+  var type_id = $('.comment_commentable_id').val()
   var content = $('#comment_content').val()
     $.ajax({
       type: 'post',
@@ -10,7 +10,7 @@ $(document).ready(function() {
       data: $(this).serialize(),
       url: "/questions/" + type_id + "/comments",
       success: function (response) {
-        $('.comment-list').prepend("<p class='centered'>" + response.content + "</p>");
+        $(".this-answer" + response.commentable_id).prepend("<p class='centered'>" + response.content + "</p>");
         $('.comment-content').val("");
       }
     });
