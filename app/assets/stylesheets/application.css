@@ -318,21 +318,6 @@ form input[type="submit"]:hover {
   font-family: 'Lobster';
 }
 
-/*.answer-votes-container {
-  height: 50px;
-  width: 250px;
-  margin: auto;
-}
-
-.vote-with-thumbs {
-  float: left;
-}
-
-.answer-content {
-  float: right;
-  margin-top: 23px;
-}*/
-
 #edit-answer-form {
   text-align: center;
 }
