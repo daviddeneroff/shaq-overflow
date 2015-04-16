@@ -1,7 +1,7 @@
 <div class="centered">
   <%= form_for [@question, answer, @comment] do |f| %>
     <%= f.hidden_field :commentable_type, :value => "Answer" %>
-    <%= f.hidden_field :commentable_id, :value => answer.id %>
+    <%= f.hidden_field :commentable_id, :value => answer.id, class: "commentable-id" %>
 
     <%= f.text_field :content, class: "comment-content" %>
     <%= f.submit %>
