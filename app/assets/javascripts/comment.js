@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("#new_comment").submit(function(event){
+  $(".new_comment").submit(function(event){
     event.preventDefault();
   var type = $('#comment_commentable_type').val()
   var type_id = $('#comment_commentable_id').val()
@@ -10,8 +10,8 @@ $(document).ready(function() {
       data: $(this).serialize(),
       url: "/questions/" + type_id + "/comments",
       success: function (response) {
-        $('.comment-list').prepend("<p>" + response.content + "</p>");
-        $('#comment_content').val("");
+        $('.comment-list').prepend("<p class='centered'>" + response.content + "</p>");
+        $('.comment-content').val("");
       }
     });
   })
