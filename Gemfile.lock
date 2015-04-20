@@ -58,6 +58,7 @@ GEM
     debug_inspector (0.0.2)
     debugger-linecache (1.2.0)
     diff-lcs (1.2.5)
+    dogstatsd-ruby (1.4.1)
     erubis (2.7.0)
     execjs (2.3.0)
     factory_girl (4.3.0)
@@ -183,6 +184,7 @@ DEPENDENCIES
   byebug
   capybara
   chromedriver-helper
+  dogstatsd-ruby
   factory_girl_rails
   faker
   gosleap
