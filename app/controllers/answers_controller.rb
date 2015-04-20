@@ -15,10 +15,13 @@ class AnswersController < ApplicationController
   end
 
   def create
+    start_time = Time.now
     @answer = Answer.new(answer_params)
     @answer.user = User.find(current_user.id)
     @answer.question = Question.find(params[:question_id])
     if @answer.save
+      duration = Time.now - start_time
+      STATSD.histogram('database.query.time', duration)
       redirect_to question_path(@answer.question)
     else
       render :new
