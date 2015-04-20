@@ -11,16 +11,6 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 require 'statsd'
 
-statsd = Statsd.new
-
-def render_page()
-  render :'users/new', layout: false
-  statsd.increment('web.page_views')
-  p "we got another"
-  p "3" * 1000
-  return 'Hello World!'
-end
-
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
