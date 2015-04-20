@@ -11,6 +11,10 @@ require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 require 'statsd'
 
+STATSD = Statsd.new
+
+STATSD.histogram("web.latency.avg", 200)
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
