@@ -47667,3 +47667,1776 @@ Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c40
 
 
 Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:23:14 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:33:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `render_page' for #<QuestionsController:0x007f9585f21990>):
+  app/controllers/questions_controller.rb:18:in `show'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (10.1ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (33.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (17.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (41.8ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:34:43 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 2ms
+
+NameError (undefined local variable or method `render_page' for #<QuestionsController:0x007f9585736578>):
+  app/controllers/questions_controller.rb:18:in `show'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (25.1ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:34:44 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+Completed 500 Internal Server Error in 3ms
+
+NameError (undefined local variable or method `render_page' for #<QuestionsController:0x007f9585dc8fa8>):
+  app/controllers/questions_controller.rb:18:in `show'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (47.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (70.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (14.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (29.5ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-20 15:34:55 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.7ms)[0m  SELECT "questions".* FROM "questions"
+Completed 500 Internal Server Error in 26ms
+
+NameError (undefined local variable or method `render_page' for #<QuestionsController:0x007f9585e018a8>):
+  app/controllers/questions_controller.rb:12:in `index'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.7ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (18.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.1ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-20 15:34:57 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT "questions".* FROM "questions"[0m
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `render_page' for #<QuestionsController:0x007f9586b66bb0>):
+  app/controllers/questions_controller.rb:12:in `index'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (19.1ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (12.5ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (28.1ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:35:19 -0400
+Processing by WelcomeController#index as HTML
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/daviddeneroff/Desktop/pending/try-2-shaq/app/models/user.rb:13: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/models/user.rb:13: syntax error, unexpected end-of-input, expecting keyword_end
+  app/controllers/application_controller.rb:10:in `current_user'
+  app/controllers/welcome_controller.rb:3:in `index'
+
+
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/actionpack-4.2.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (20.0ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (11.9ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/daviddeneroff/.rbenv/versions/2.0.0-p481/lib/ruby/gems/2.0.0/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (27.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:35:34 -0400
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+  Rendered welcome/index.html.erb within layouts/application (0.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 35]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 35]]
+Completed 200 OK in 362ms (Views: 297.4ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:35:34 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-20 15:35:36 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:35:36 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 37ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-04-20 15:35:37 -0400
+Processing by UsersController#new as */*
+  Rendered users/_form.html.erb (413.2ms)
+  Rendered users/new.html.erb (417.2ms)
+Completed 200 OK in 425ms (Views: 424.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/shaq_laying_down.jpg" for ::1 at 2015-04-20 15:35:37 -0400
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-20 15:35:37 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-20 15:35:40 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lC+HpElfJWpjBFFLB6HSEU/0pQFosw7JxhiqdtOg/YX+qq59POotI3frUuf3DcBWls36HfoJbgtgaIjINfN01A==", "user"=>{"username"=>"aldskf", "email"=>"lakdjf", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.7ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'aldskf' LIMIT 1
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'lakdjf' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "aldskf"], ["email", "lakdjf"], ["password_digest", "$2a$10$6z9707YW8tvDc93f6DL/jeEbvKivlSNDLn96.bVTTf5XG3SebFcGy"], ["created_at", "2015-04-20 19:35:41.000395"], ["updated_at", "2015-04-20 19:35:41.000395"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/36
+Completed 302 Found in 90ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/users/36" for ::1 at 2015-04-20 15:35:41 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "questions" WHERE "questions"."user_id" = $1[0m  [["user_id", 36]]
+  Rendered users/show.html.erb within layouts/application (81.7ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 110ms (Views: 106.2ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-20 15:35:50 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.9ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  [1m[36m (0.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (49.2ms)
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 95ms (Views: 83.9ms | ActiveRecord: 10.0ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:35:52 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.4ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (2.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (4.3ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (4.8ms)
+  [1m[36mComment Load (0.7ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.4ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.0ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.4ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (130.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 175ms (Views: 149.8ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:35:52 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:35:52 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:32 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.3ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.4ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.4ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (41.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 68ms (Views: 62.6ms | ActiveRecord: 4.3ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:33 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.6ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.6ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.1ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.5ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (2.8ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[36mComment Load (1.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.4ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (3.2ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (157.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 201ms (Views: 190.7ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:33 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:34 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.3ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.0ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.8ms)
+  [1m[35mComment Load (0.8ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (41.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 80ms (Views: 74.3ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:34 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:34 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.7ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.9ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.7ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.7ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.9ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.4ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (2.2ms)
+  [1m[36mComment Load (1.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (152.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 191ms (Views: 182.7ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:35 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (4.0ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (2.5ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.3ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.3ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.5ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (2.9ms)
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.4ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (3.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.4ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.6ms)
+  [1m[35mComment Load (0.6ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (65.3ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 109ms (Views: 101.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:35 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:36 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.6ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.5ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (3.6ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.2ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (4.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.1ms)
+  [1m[36m (1.0ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (4.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (174.9ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 215ms (Views: 206.8ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:36 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.9ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.0ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (41.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 66ms (Views: 61.3ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:36 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:37 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (2.3ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.7ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.6ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.5ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (3.6ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.5ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (2.5ms)
+  [1m[36mComment Load (0.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (164.7ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 204ms (Views: 196.6ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:37 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.6ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.4ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (41.6ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 70ms (Views: 65.7ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:37 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:36:38 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.3ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.8ms)
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.7ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.6ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.2ms)
+  [1m[36m (0.8ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (3.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (3.8ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (1.0ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (2.1ms)
+  [1m[36m (1.7ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (3.2ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (179.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+Completed 200 OK in 228ms (Views: 218.9ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:36:38 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:40:07 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered questions/_vote_up.html.erb (1.4ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.7ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (1.7ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (59.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 36]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 36]]
+Completed 200 OK in 187ms (Views: 84.4ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:40:08 -0400
+
+
+Started GET "/logout" for ::1 at 2015-04-20 15:40:08 -0400
+Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-04-20 15:40:09 -0400
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 27ms (Views: 26.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2015-04-20 15:40:09 -0400
+Processing by UsersController#new as */*
+  Rendered users/_form.html.erb (3.3ms)
+  Rendered users/new.html.erb (7.1ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-20 15:40:09 -0400
+
+
+Started GET "/assets/shaq_laying_down.jpg" for ::1 at 2015-04-20 15:40:09 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-20 15:40:12 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8eX7Nwz0ncn8sV+vZ3HfPvOOGimkVvSm1JlDU6GkRnHiMjyC+Ziixh7jlSveAe2o8bzqAcHWiiophHbdUc8fg==", "user"=>{"username"=>"ald", "email"=>"lakdjf", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'ald' LIMIT 1
+  [1m[36mUser Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'lakdjf' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+Redirected to http://localhost:3000/users/new
+Completed 302 Found in 86ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/users/new" for ::1 at 2015-04-20 15:40:12 -0400
+Processing by UsersController#new as HTML
+  Rendered users/_form.html.erb (2.2ms)
+  Rendered users/new.html.erb (3.0ms)
+Completed 200 OK in 4ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-20 15:40:12 -0400
+
+
+Started GET "/assets/shaq_laying_down.jpg" for ::1 at 2015-04-20 15:40:12 -0400
+
+
+Started GET "/users/new" for ::1 at 2015-04-20 15:40:14 -0400
+Processing by UsersController#new as */*
+  Rendered users/_form.html.erb (4.7ms)
+  Rendered users/new.html.erb (9.5ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/small_shaq.png" for ::1 at 2015-04-20 15:40:14 -0400
+
+
+Started GET "/assets/shaq_laying_down.jpg" for ::1 at 2015-04-20 15:40:14 -0400
+
+
+Started POST "/users" for ::1 at 2015-04-20 15:40:16 -0400
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yK/Uqn0Tw6gshE3VUOc0JajABpAGq5FLj4OER/cteFyw4Iu0qsZzVBMNBv9CAvTv8MjNUKc9kLG8d/CRzOzVOw==", "user"=>{"username"=>"lakd", "email"=>"lkajdfl", "password"=>"[FILTERED]"}, "commit"=>"Create User"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (0.3ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."username" = 'lakd' LIMIT 1
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'lkajdfl' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"  [["username", "lakd"], ["email", "lkajdfl"], ["password_digest", "$2a$10$ZPP4kLOd0KMYlkeVwjDGOuzS.eh4dvD14KgzjBvURAp5YLpRdD8E6"], ["created_at", "2015-04-20 19:40:16.771516"], ["updated_at", "2015-04-20 19:40:16.771516"]]
+  [1m[36m (0.4ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/users/37
+Completed 302 Found in 81ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/users/37" for ::1 at 2015-04-20 15:40:16 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "questions" WHERE "questions"."user_id" = $1[0m  [["user_id", 37]]
+  Rendered users/show.html.erb within layouts/application (2.5ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/questions" for ::1 at 2015-04-20 15:40:18 -0400
+Processing by QuestionsController#index as HTML
+  [1m[35mQuestion Load (0.4ms)[0m  SELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 2]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2[0m  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (12.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+Completed 200 OK in 139ms (Views: 135.9ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:40:19 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered questions/_vote_up.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (2.5ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (1.9ms)
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (2.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[36m (0.9ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (50.5ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+Completed 200 OK in 77ms (Views: 71.3ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:40:20 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:40:20 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:41:01 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.2ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered questions/_vote_up.html.erb (2.4ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.6ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (1.6ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.7ms)
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.1ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (0.8ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (43.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+Completed 200 OK in 71ms (Views: 65.8ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:41:01 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:41:02 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mQuestion Load (0.2ms)[0m  [1mSELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered questions/_vote_up.html.erb (1.2ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (2.1ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.2ms)[0m  [1mSELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.8ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (71.8ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (3.7ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2[0m  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (116.6ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+Completed 200 OK in 144ms (Views: 139.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:41:02 -0400
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:41:03 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered questions/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.2ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.1ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.2ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.2ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (3.0ms)
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (2.0ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (41.0ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+Completed 200 OK in 67ms (Views: 62.3ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/base.self-01022f677536e744f23bb89b067cd2540f2f4386ca4ed6510624bc547756eaad.css?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/answer.self-781169d734409bf76b398b112b08eb826465447bf67090df74ed7159054d6aa8.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/font.self-56834722b739ec28806de2a3e67673113b003871ea434e7ac048227f5352ee8b.css?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/application.self-8b01c94a71e566f9f83cb1d0c05a5f1f71d97eb69ee856f9867af0c32386b9d5.css?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/app.self-b746f49d4719997332606684a69adb8a12f55731f021d3d8fac06131895f081e.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/comment.self-85c6f407c3591ec59af240b8263e11de0d8f83e3804a3e4a8f3bb4e478048501.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/login.self-664916a857907b296936b4e79f3797e0264bfd162e935a8a569d6e5394edee87.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/question.self-7387103396f365f3fa9fbd001416fc7b61cb2781ff613902a1723cb62b6392a7.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/application.self-2b00c68320848afe54cf9919a7a76ed257f93bdb6e12dc2160d07a8b1fe5e9f4.js?body=1" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/thumbs-up-477e1242f7a471fa2205ac04cef6bc82c1d87e73c3e871c406e21ec247ab8691.jpg" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/assets/thumbs-down-eb9f90b6bf2877f365d5a3ce32f2e3dc8f36ba939377966b8704908fa5f7cfd9.png" for ::1 at 2015-04-20 15:41:03 -0400
+
+
+Started GET "/questions" for ::1 at 2015-04-20 15:41:04 -0400
+Processing by QuestionsController#index as HTML
+  [1m[36mQuestion Load (0.8ms)[0m  [1mSELECT "questions".* FROM "questions"  ORDER BY "questions"."created_at" DESC[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 3], ["votable_type", "Question"]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 3]]
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 2], ["votable_type", "Question"]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 2]]
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2  [["votable_id", 1], ["votable_type", "Question"]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1[0m  [["question_id", 1]]
+  Rendered questions/index.html.erb within layouts/application (8.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+Completed 200 OK in 153ms (Views: 148.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/questions/3" for ::1 at 2015-04-20 15:41:06 -0400
+Processing by QuestionsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mQuestion Load (0.3ms)[0m  SELECT  "questions".* FROM "questions" WHERE "questions"."id" = $1 LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered questions/_vote_up.html.erb (1.8ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Question"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Question"], ["value", -1]]
+  Rendered questions/_vote_down.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mAnswer Load (0.1ms)[0m  [1mSELECT  "answers".* FROM "answers" WHERE "answers"."question_id" = $1 AND "answers"."accepted" = 't' LIMIT 1[0m  [["question_id", 3]]
+  [1m[35mAnswer Load (0.2ms)[0m  SELECT "answers".* FROM "answers" WHERE "answers"."question_id" = $1  [["question_id", 3]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (2.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 3], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 3], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (1.1ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 3], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.1ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 4], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 4], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.8ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (1.3ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 4], ["commentable_type", "Answer"]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_vote_up.html.erb (1.3ms)
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3  [["votable_id", 6], ["votable_type", "Answer"], ["value", 1]]
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "votes" WHERE "votes"."votable_id" = $1 AND "votes"."votable_type" = $2 AND "votes"."value" = $3[0m  [["votable_id", 6], ["votable_type", "Answer"], ["value", -1]]
+  Rendered answers/_vote_down.html.erb (1.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  Rendered answers/_form.html.erb (0.9ms)
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."commentable_id" = $1 AND "comments"."commentable_type" = $2  [["commentable_id", 6], ["commentable_type", "Answer"]]
+  Rendered questions/show.html.erb within layouts/application (44.6ms)
+  [1m[36mCACHE (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1[0m  [["id", 37]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT 1  [["id", 37]]
+Completed 200 OK in 76ms (Views: 69.5ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/assets/arrow.png" for ::1 at 2015-04-20 15:41:06 -0400
+
+
+Started GET "/assets/shaq_funny_face.jpg" for ::1 at 2015-04-20 15:41:06 -0400
