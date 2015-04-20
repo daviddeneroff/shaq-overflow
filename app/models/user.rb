@@ -10,4 +10,4 @@ end
 
 def render_page()
   STATSD.increment('web.page_views')
-end
+ends
