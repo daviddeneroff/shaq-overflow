@@ -26,7 +26,7 @@ class Question < ActiveRecord::Base
     self.votes.where(value: 1).count - self.votes.where(value: -1).count
   end
 
-  def render_page()
+  def render_page
     STATSD.increment('web.page_views')
   end
 
