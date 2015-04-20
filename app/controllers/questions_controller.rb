@@ -24,8 +24,8 @@ class QuestionsController < ApplicationController
   def new
     if is_authenticated?
       flash[:notice] = ""
-      @question = Question.new
       render_page
+      @question = Question.new
       render :new, layout: false
     end
   end
