@@ -13,7 +13,7 @@ require 'statsd'
 
 STATSD = Statsd.new
 
-STATSD.histogram("web.latency.avg", 200)
+STATSD.histogram('query.time', 10, :tags => ["version:1"])
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.

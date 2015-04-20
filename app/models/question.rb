@@ -1,5 +1,3 @@
-require 'statsd'
-
 class Question < ActiveRecord::Base
   belongs_to :author, class_name: 'User'
   has_many :votes, as: :votable
@@ -24,10 +22,6 @@ class Question < ActiveRecord::Base
 
   def q_net
     self.votes.where(value: 1).count - self.votes.where(value: -1).count
-  end
-
-  def render_page
-    STATSD.increment('web.page_views')
   end
 
 end

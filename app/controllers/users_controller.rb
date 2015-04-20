@@ -59,5 +59,8 @@ class UsersController < ApplicationController
     params.require(:user).permit(:username, :email, :password)
   end
 
+  def render_page
+    STATSD.increment('web.page_views')
+  end
 
 end

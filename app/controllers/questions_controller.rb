@@ -45,4 +45,8 @@ class QuestionsController < ApplicationController
       params.require(:question).permit(:url, :title)
     end
 
+    def render_page
+      STATSD.increment('web.page_views')
+    end
+
 end
