@@ -6,8 +6,9 @@ class User < ActiveRecord::Base
   has_many :comments
   validates :username, :email, :password_digest, presence: true
   validates :username, :email, uniqueness: true
-end
 
 def render_page()
   STATSD.increment('web.page_views')
-ends
+end
+
+end
