@@ -11,6 +11,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     respond_to do |format|
       if @user.save
+        render_page
         set_session
         format.html { redirect_to @user, notice: 'User Created' }
         format.json { render :user, status: :created, location: @user }
