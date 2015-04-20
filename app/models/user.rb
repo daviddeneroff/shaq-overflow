@@ -7,3 +7,12 @@ class User < ActiveRecord::Base
   validates :username, :email, :password_digest, presence: true
   validates :username, :email, uniqueness: true
 end
+
+
+def render_page()
+statsd = Statsd.new
+  p "3" * 1000
+  p "we got another"
+  statsd.increment('web.page_views')
+  p "3" * 1000
+end
