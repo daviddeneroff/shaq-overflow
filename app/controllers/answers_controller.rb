@@ -9,6 +9,7 @@ class AnswersController < ApplicationController
   end
 
   def new
+    render_page
     @answer = Answer.new
     @question = Question.find(params[:question_id])
     render :new, layout: false
@@ -49,4 +50,9 @@ private
   def answer_params
     params.require(:answer).permit(:content, :accepted)
   end
+
+  def render_page
+    STATSD.increment('web.page_views', :tags => ['page:answers'])
+  end
+
 end
