@@ -17,11 +17,12 @@ class QuestionsController < ApplicationController
   def show
     start_time = Time.now
     render_page
+    new_metric
     @question = Question.find(params[:id])
     @comment = Comment.new
     @answer = Answer.new
     duration = Time.now - start_time
-    STATSD.histogram('something', duration, :tags => ['page:kenny'])
+    STATSD.histogram('page_load', duration, :tags => ['page:questions-show'])
   end
 
   def new
@@ -50,6 +51,10 @@ class QuestionsController < ApplicationController
 
     def render_page
       STATSD.increment('web.page_views', :tags => ['page:questions'])
+    end
+
+    def new_metric
+      STATSD.increment("hello.world")
     end
 
 end
