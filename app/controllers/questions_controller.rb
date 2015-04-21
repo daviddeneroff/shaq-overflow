@@ -15,10 +15,13 @@ class QuestionsController < ApplicationController
   end
 
   def show
+    start_time = Time.now
     render_page
     @question = Question.find(params[:id])
     @comment = Comment.new
     @answer = Answer.new
+    duration = Time.now - start_time
+    STATSD.histogram('something', duration, :tags => ['page:kenny'])
   end
 
   def new
