@@ -54,7 +54,7 @@ class QuestionsController < ApplicationController
     end
 
     def new_metric
-      STATSD.increment("hello.world")
+      STATSD.increment("test.support.random")
     end
 
 end
