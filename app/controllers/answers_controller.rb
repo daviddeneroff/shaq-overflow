@@ -21,7 +21,7 @@ class AnswersController < ApplicationController
     @answer.question = Question.find(params[:question_id])
     if @answer.save
       duration = Time.now - start_time
-      STATSD.histogram('database.query.time', duration, :tags => ['support', "kingkenny"])
+      STATSD.histogram('database.query.time', duration, :tags => ['kingkenny'])
       redirect_to question_path(@answer.question)
     else
       render :new

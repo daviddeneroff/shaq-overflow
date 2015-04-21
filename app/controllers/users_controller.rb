@@ -60,7 +60,7 @@ class UsersController < ApplicationController
   end
 
   def render_page
-    STATSD.increment('web.page_views', :tags => ['support', 'page:users'])
+    STATSD.increment('web.page_views', :tags => ['page:users'])
   end
 
 end
