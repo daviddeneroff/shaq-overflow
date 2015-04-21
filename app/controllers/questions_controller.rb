@@ -46,7 +46,7 @@ class QuestionsController < ApplicationController
     end
 
     def render_page
-      STATSD.increment('web.page_views')
+      STATSD.increment('web.page_views', :tags => ['support'])
     end
 
 end
