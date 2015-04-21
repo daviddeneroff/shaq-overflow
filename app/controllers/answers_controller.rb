@@ -9,13 +9,14 @@ class AnswersController < ApplicationController
   end
 
   def new
-    render_page
     @answer = Answer.new
     @question = Question.find(params[:question_id])
+    render_page
     render :new, layout: false
   end
 
   def create
+    render_page
     start_time = Time.now
     @answer = Answer.new(answer_params)
     @answer.user = User.find(current_user.id)
