@@ -1,16 +1,23 @@
 class QuestionsController < ApplicationController
 
   def index
+    start_time = Time.now
     @questions = Question.all
     if params[:order] == "votes"
       render_page
       @questions = Question.all.sort_by {|q| q.votes.count }.reverse
+      duration = Time.now - start_time
+      STATSD.histogram('page_load', duration, :tags => ['page:questions-index'])
     elsif params[:order] == "trending"
       render_page
       @questions = Question.all.sort_by {|q| [q.elapsed, -1 * q.votes.count] }
+      duration = Time.now - start_time
+      STATSD.histogram('page_load', duration, :tags => ['page:questions-index'])
     else
       render_page
       @questions = Question.order(created_at: :desc)
+      duration = Time.now - start_time
+      STATSD.histogram('page_load', duration, :tags => ['page:questions-index'])
     end
   end
 
